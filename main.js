@@ -8,13 +8,17 @@ recognition.onresult=function run(event){
 console.log(event)
 var Content = event.results[0][0].transcript;
 console.log(Content);
+if(Content=="take my selfie")
+{console.log("taking selfie")
+speak();
+}
 document.getElementById("textbox").innerHTML=Content;
 console.log(Content)
 speak();
 }
 function speak(){
 var synth=window.speechSynthesis;
-speak_data=document.getElementById("textbox").value;
+speak_data="taking your selfie in 5 seconds"
 var utterthis=new SpeechSynthesisUtterance(speak_data)
 synth.speak(utterthis)
 Webcam.attach(camera)
