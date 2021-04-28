@@ -4,9 +4,9 @@
 } 
 #camera
 {
-    width:360px;
-    height: 250px;
-    border:1px solid grey;
+    width:370px;
+    height: 260px;
+    border:3px solid aquamarine;
 }
 #logo_img
 {
@@ -16,4 +16,13 @@
 #textbox
 {
     width: 300px;
+    background-color: aquamarine;
+}
+body
+{
+background-color:royalblue;
+}
+text
+{
+background-color: white;
 }
